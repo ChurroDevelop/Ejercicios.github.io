@@ -3,6 +3,6 @@
 la presencia de comillas y caracteres escapados.
  */
 
-let regex = /"(?:[^"\\]|\\.)*"/g
+let regex = /"*"/g;
 let palabra = prompt("Ingrese la cadena de texto con o sin comillas dobles");
-alert(palabra.match(regex));
+console.log(regex.test(palabra));
